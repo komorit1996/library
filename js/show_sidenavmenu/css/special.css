@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/* ===== style.cssの上書き ===== */
+
+
+.container {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    padding: 16px 0;
+}
+
+header .container {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-block {
+    flex: 1 1 auto;
+}
+
+.hamburger {
+    flex: 0 0 32px;
+    align-self: center;
+    margin-left: 16px;
+    text-align: center;
+    color: #fff;
+    border: solid 1px #6592c6;
+    box-shadow: 0px 0px 10px #6592c6;
+}
+
+
+/* ===== 機能の実装に必要なCSS ===== */
+
+/* ドロワーナビゲーションの必須スタイル */
+
+/* ドロワーが開かれたときのスタイル */
+
+/* ===== ヘッダーにボタンを配置 ===== */
+
+/* additional css 
+
+    padding: 24px 24px 0 24px;
+*/
+.show {
+    transform: translate3d(-270px, 0, 0);
+}
+
+#nav {
+    position: fixed;
+    right: -270px;
+    width: 270px;
+    height: 100%;
+    top: 0%;
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav li a {
+    display: block;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #114d60 ;
+    border-top: 3px solid #6592c6;
+    text-decoration: none;
+    color: red;
+    background-color: antiquewhite;
+}
+
+#nav li a:hover {
+    background: green;
+}
+
+#nav .logo {
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+main .container {
+    padding: 0%;
+}
+
+.key {
+    width: 100;
+}
+
+.content {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.archive {
+    margin: 40px 0 0;
+    padding: 0 30;
+}
+
+@media(min-width: 700px){
+    .archive-box {
+        justify-content: space-around;
+        width: 100%;
+        display: flex;
+    }
+}
+
+.archive h3 {
+    border-top: 2px dashed;
+    border-bottom: 2px dashed;
+    padding: 0.7rem 0;
+    text-align: center;
+}
+
+.archive figcaption {
+    text-align: center;
+}
+
+.thumb {
+    max-width: 234;
+}
+
+
+
+
+
